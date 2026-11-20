@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy · Play Mind: Board & Brain</title><meta name="description" content="Play Mind: Board & Brain — Privacy Policy">
+<style>
+:root{--bg:#f5f3fa;--card:#fff;--ink:#16162f;--soft:#5c5c7a;--gold:#9c6d12;--line:#dad5e8;--chip:#ece8f5}
+@media (prefers-color-scheme:dark){:root{--bg:#0a0d1d;--card:#141832;--ink:#f2effa;--soft:#a4a7cb;--gold:#e8c56e;--line:#2c3158;--chip:#1e2347}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 -apple-system,"Segoe UI",Roboto,"Noto Sans",sans-serif}
+.wrap{max-width:820px;margin:0 auto;padding:28px 20px 64px}
+header{display:flex;align-items:center;gap:14px;flex-wrap:wrap;justify-content:space-between;margin-bottom:8px}
+.brand{font-family:Georgia,"Noto Serif",serif;font-weight:700;font-size:28px;letter-spacing:-.4px}
+.brand small{display:block;font:600 12px/1 sans-serif;letter-spacing:.14em;color:var(--gold);text-transform:uppercase;margin-top:6px}
+.lang{display:inline-flex;background:var(--chip);border-radius:12px;padding:4px;gap:4px}
+.lang button{border:0;background:transparent;color:var(--soft);font:600 14px sans-serif;padding:8px 14px;border-radius:9px;cursor:pointer}
+.lang button[aria-pressed=true]{background:var(--card);color:var(--ink);box-shadow:inset 0 0 0 1px var(--gold)}
+h1{font-family:Georgia,"Noto Serif",serif;font-size:34px;line-height:1.2;margin:28px 0 6px}
+h2{font-family:Georgia,"Noto Serif",serif;font-size:22px;margin:34px 0 8px;padding-top:6px}
+h3{font-size:16px;margin:20px 0 4px;color:var(--gold)}
+p,li{color:var(--ink)}li{margin:4px 0}.muted{color:var(--soft)}
+a{color:var(--gold)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:18px 20px;margin:14px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.grid a{text-decoration:none;color:inherit}.grid .card{height:100%;margin:0}.grid b{display:block;font-family:Georgia,serif;font-size:19px}
+.topics{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0}.topics>span{padding:6px 14px;border-radius:99px;color:#fff;font:600 13px sans-serif}
+table{border-collapse:collapse;width:100%;margin:10px 0}th,td{border:1px solid var(--line);padding:8px 10px;text-align:left;vertical-align:top;font-size:15px}th{background:var(--chip)}
+footer{margin-top:46px;color:var(--soft);font-size:14px;border-top:1px solid var(--line);padding-top:16px}
+[data-l]{display:none}body[data-lang=en] [data-l=en],body[data-lang=vi] [data-l=vi]{display:revert}
+noscript style{display:none}
+</style><noscript><style>[data-l]{display:revert!important}</style></noscript></head>
+<body data-lang="en"><div class="wrap">
+<header><div class="brand">Play Mind<small>Board &amp; Brain</small></div>
+<div class="lang" role="group" aria-label="Language"><button data-set="en" aria-pressed="true">English</button><button data-set="vi" aria-pressed="false">Tiếng Việt</button></div></header>
+<p><a href="index.html">&larr; <span data-l="en">Home</span><span data-l="vi">Trang chủ</span></a></p>
+<div data-l="en">
+<h1>Privacy Policy</h1>
+<p class="muted">App: <b>Play Mind: Board & Brain</b> (Android) · Developer: <b>FWs</b> · Contact: <a href="mailto:17eathday@gmail.com">17eathday@gmail.com</a> · Last updated: November 20, 2026</p>
+<p>This policy explains what information Play Mind: Board & Brain (the "App") uses and how. We designed the App so that it works without an account and without any server operated by us. We do not sell personal information.</p>
+
+<h2>1. Summary</h2>
+<ul><li>No account, sign-up, e-mail or phone number is required.</li>
+<li>We (the developer) do not operate a server and do not receive your game data.</li>
+<li>The App shows ads served by <b>Google AdMob</b>, which may collect and use certain device information as described in section 4.</li>
+<li>Multiplayer connects your device directly to your opponent's device (peer-to-peer).</li></ul>
+
+<h2>2. Information stored on your device</h2>
+<p>The App stores the following on your device only: your diamond balance, daily check-in and win-streak counters, per-game statistics, your chosen language and appearance, and a nickname you may set (a random one such as "Player1234" is used by default). The wallet data is encrypted with a key held in the Android Keystore and is excluded from cloud backup and device transfer. Uninstalling the App deletes this data. We cannot access it.</p>
+
+<h2>3. Information used by multiplayer features</h2>
+<ul><li><b>Nearby play (Google Nearby Connections):</b> uses Bluetooth and Wi-Fi to discover and connect to devices close to you. On Android 12 and above the App asks for the "Nearby devices" permissions (Bluetooth scan/advertise/connect, Nearby Wi-Fi devices). On Android 11 and below it asks for the location permission, which the Android system requires for Bluetooth discovery; the App does not read or store your location. During a game, your nickname and moves are exchanged directly with your opponent's device.</li>
+<li><b>Internet play (WebRTC):</b> the App creates a peer-to-peer connection with your opponent. You and your opponent exchange a connection code (text or QR) yourselves; no server of ours is involved. To find a connection path, the App contacts Google's public STUN servers (stun.l.google.com), which means your IP address is visible to Google's STUN service and, as part of the connection code, to your opponent. Your nickname and moves are then sent directly to your opponent, encrypted in transit by WebRTC (DTLS).</li>
+<li><b>QR scanning:</b> scanning a code uses Google's code scanner (ML Kit, delivered through Google Play services). The App itself does not request camera permission and does not store images.</li>
+<li><b>Opponents in rooms:</b> when you create a room and no human joins, an opponent controlled by the App (a computer player) may be added. Computer opponents do not collect or send any data.</li></ul>
+
+<h2>4. Advertising (Google AdMob)</h2>
+<p>The App displays banner, interstitial and rewarded ads through <b>Google AdMob</b> (Google LLC). AdMob and Google may collect and use, for serving, measuring and personalising ads, analytics and fraud prevention: the Android advertising ID, IP address, device and operating-system information, app interaction and diagnostic data, and approximate location derived from IP address. AdMob may use identifiers and similar technologies on your device. The App declares the <code>AD_ID</code> permission for this purpose.</p>
+<ul><li><b>Consent:</b> where required (for example in the European Economic Area, the United Kingdom and Switzerland) the App shows Google's consent form (User Messaging Platform) before requesting ads, and you can change your choice at any time in <i>Settings → Privacy options</i>.</li>
+<li><b>Controls:</b> you can reset your advertising ID or opt out of ads personalisation in your Android settings (Settings → Google → Ads, or Settings → Privacy → Ads).</li>
+<li><b>Frequency:</b> interstitial ads are shown only between games. Rewarded ads are shown only when you choose to watch one.</li>
+<li>More information: <a href="https://policies.google.com/privacy">Google Privacy Policy</a> · <a href="https://policies.google.com/technologies/partner-sites">How Google uses data from sites or apps that use its services</a> · <a href="https://support.google.com/admob/answer/6128543">AdMob &amp; Firebase data disclosure</a>.</li></ul>
+
+<h2>5. Google Play services</h2>
+<p>The App uses Google Play services for in-app updates (Google Play delivers new versions in the background), Nearby Connections and the code scanner. These services are governed by Google's own privacy policy.</p>
+
+<h2>6. Children</h2>
+<p>The App is not directed to children under 13 (or the minimum age in your country) and we do not knowingly collect personal information from children. If you believe a child has provided information, contact us at 17eathday@gmail.com.</p>
+
+<h2>7. Data security and retention</h2>
+<p>Game data is kept on your device and protected by Android Keystore encryption. We keep no copy. Data used by AdMob and Google Play services is retained by Google under its own policies.</p>
+
+<h2>8. Your choices and rights</h2>
+<p>Depending on where you live (for example under the GDPR or CCPA) you may have the right to access, delete or object to the processing of your personal data. Because we do not hold your data, you can delete everything by uninstalling the App. For data held by Google (advertising), use your Google account controls or Android settings. You can also write to 17eathday@gmail.com.</p>
+
+<h2>9. Changes</h2>
+<p>We may update this policy when the App changes. The date at the top shows the latest version. Continued use after an update means you accept it.</p>
+
+<h2>10. Contact</h2>
+<p>FWs · <a href="mailto:17eathday@gmail.com">17eathday@gmail.com</a></p>
+</div><div data-l="vi">
+<h1>Chính sách quyền riêng tư</h1>
+<p class="muted">Ứng dụng: <b>Play Mind: Board & Brain</b> (Android) · Nhà phát triển: <b>FWs</b> · Liên hệ: <a href="mailto:17eathday@gmail.com">17eathday@gmail.com</a> · Cập nhật lần cuối: 20/11/2026</p>
+<p>Chính sách này giải thích Play Mind: Board & Brain ("Ứng dụng") sử dụng thông tin nào và như thế nào. Ứng dụng được thiết kế để chơi mà không cần tài khoản và không cần máy chủ do chúng tôi vận hành. Chúng tôi không bán thông tin cá nhân.</p>
+
+<h2>1. Tóm tắt</h2>
+<ul><li>Không cần tài khoản, đăng ký, e-mail hay số điện thoại.</li>
+<li>Chúng tôi (nhà phát triển) không vận hành máy chủ và không nhận dữ liệu chơi game của bạn.</li>
+<li>Ứng dụng hiển thị quảng cáo do <b>Google AdMob</b> cung cấp, AdMob có thể thu thập và sử dụng một số thông tin thiết bị như mô tả ở mục 4.</li>
+<li>Chế độ nhiều người chơi kết nối trực tiếp thiết bị của bạn với thiết bị đối thủ (ngang hàng).</li></ul>
+
+<h2>2. Thông tin lưu trên thiết bị của bạn</h2>
+<p>Ứng dụng chỉ lưu trên thiết bị của bạn: số dư kim cương, bộ đếm điểm danh và chuỗi thắng, thống kê từng game, ngôn ngữ và giao diện bạn chọn, và biệt danh bạn đặt (mặc định là tên ngẫu nhiên như "Player1234"). Dữ liệu ví được mã hóa bằng khóa trong Android Keystore và bị loại khỏi sao lưu đám mây và chuyển thiết bị. Gỡ cài đặt Ứng dụng sẽ xóa dữ liệu này. Chúng tôi không thể truy cập dữ liệu đó.</p>
+
+<h2>3. Thông tin dùng cho tính năng nhiều người chơi</h2>
+<ul><li><b>Chơi gần nhau (Google Nearby Connections):</b> dùng Bluetooth và Wi-Fi để tìm và kết nối với thiết bị ở gần. Trên Android 12 trở lên, Ứng dụng xin quyền "Thiết bị ở gần" (quét/quảng bá/kết nối Bluetooth, thiết bị Wi-Fi ở gần). Trên Android 11 trở xuống, Ứng dụng xin quyền vị trí vì hệ điều hành Android yêu cầu cho việc dò tìm Bluetooth; Ứng dụng không đọc hay lưu vị trí của bạn. Trong ván đấu, biệt danh và nước đi được trao đổi trực tiếp với thiết bị đối thủ.</li>
+<li><b>Chơi qua internet (WebRTC):</b> Ứng dụng tạo kết nối ngang hàng với đối thủ. Bạn và đối thủ tự trao đổi mã kết nối (văn bản hoặc QR); không có máy chủ của chúng tôi tham gia. Để tìm đường kết nối, Ứng dụng liên hệ máy chủ STUN công cộng của Google (stun.l.google.com), nghĩa là địa chỉ IP của bạn hiển thị với dịch vụ STUN của Google và, như một phần của mã kết nối, với đối thủ. Sau đó biệt danh và nước đi được gửi trực tiếp tới đối thủ, được WebRTC (DTLS) mã hóa khi truyền.</li>
+<li><b>Quét QR:</b> việc quét mã dùng trình quét mã của Google (ML Kit, cung cấp qua Google Play services). Bản thân Ứng dụng không xin quyền camera và không lưu hình ảnh.</li>
+<li><b>Đối thủ trong phòng:</b> khi bạn tạo phòng mà không có người thật vào, một đối thủ do Ứng dụng điều khiển (người chơi máy) có thể được thêm vào. Đối thủ máy không thu thập hay gửi bất kỳ dữ liệu nào.</li></ul>
+
+<h2>4. Quảng cáo (Google AdMob)</h2>
+<p>Ứng dụng hiển thị quảng cáo biểu ngữ, xen kẽ và có thưởng thông qua <b>Google AdMob</b> (Google LLC). AdMob và Google có thể thu thập và sử dụng, để phân phát, đo lường và cá nhân hóa quảng cáo, phân tích và chống gian lận: mã nhận dạng quảng cáo Android, địa chỉ IP, thông tin thiết bị và hệ điều hành, dữ liệu tương tác với ứng dụng và dữ liệu chẩn đoán, cùng vị trí gần đúng suy ra từ địa chỉ IP. AdMob có thể dùng mã định danh và công nghệ tương tự trên thiết bị của bạn. Ứng dụng khai báo quyền <code>AD_ID</code> cho mục đích này.</p>
+<ul><li><b>Sự đồng ý:</b> khi pháp luật yêu cầu (ví dụ ở Khu vực Kinh tế châu Âu, Vương quốc Anh và Thụy Sĩ) Ứng dụng hiển thị biểu mẫu đồng ý của Google (User Messaging Platform) trước khi yêu cầu quảng cáo, và bạn có thể đổi lựa chọn bất cứ lúc nào tại <i>Cài đặt → Tùy chọn quyền riêng tư</i>.</li>
+<li><b>Kiểm soát:</b> bạn có thể đặt lại mã nhận dạng quảng cáo hoặc tắt cá nhân hóa quảng cáo trong cài đặt Android (Cài đặt → Google → Quảng cáo, hoặc Cài đặt → Quyền riêng tư → Quảng cáo).</li>
+<li><b>Tần suất:</b> quảng cáo xen kẽ chỉ hiện giữa các ván. Quảng cáo có thưởng chỉ hiện khi bạn chủ động chọn xem.</li>
+<li>Thông tin thêm: <a href="https://policies.google.com/privacy?hl=vi">Chính sách quyền riêng tư của Google</a> · <a href="https://policies.google.com/technologies/partner-sites?hl=vi">Cách Google sử dụng dữ liệu từ trang web hoặc ứng dụng dùng dịch vụ của Google</a> · <a href="https://support.google.com/admob/answer/6128543">Thông tin về dữ liệu AdMob &amp; Firebase</a>.</li></ul>
+
+<h2>5. Google Play services</h2>
+<p>Ứng dụng dùng Google Play services cho cập nhật trong ứng dụng (Google Play tải phiên bản mới ngầm), Nearby Connections và trình quét mã. Các dịch vụ này tuân theo chính sách quyền riêng tư riêng của Google.</p>
+
+<h2>6. Trẻ em</h2>
+<p>Ứng dụng không hướng tới trẻ em dưới 13 tuổi (hoặc độ tuổi tối thiểu ở quốc gia của bạn) và chúng tôi không cố ý thu thập thông tin cá nhân của trẻ em. Nếu bạn cho rằng một trẻ em đã cung cấp thông tin, hãy liên hệ 17eathday@gmail.com.</p>
+
+<h2>7. Bảo mật và thời gian lưu trữ</h2>
+<p>Dữ liệu game được lưu trên thiết bị của bạn và bảo vệ bằng mã hóa Android Keystore. Chúng tôi không giữ bản sao nào. Dữ liệu do AdMob và Google Play services sử dụng được Google lưu theo chính sách của Google.</p>
+
+<h2>8. Lựa chọn và quyền của bạn</h2>
+<p>Tùy nơi bạn sống (ví dụ theo GDPR hoặc CCPA) bạn có thể có quyền truy cập, xóa hoặc phản đối việc xử lý dữ liệu cá nhân. Vì chúng tôi không giữ dữ liệu của bạn, bạn có thể xóa mọi thứ bằng cách gỡ cài đặt Ứng dụng. Với dữ liệu do Google giữ (quảng cáo), hãy dùng điều khiển trong tài khoản Google hoặc cài đặt Android. Bạn cũng có thể viết thư tới 17eathday@gmail.com.</p>
+
+<h2>9. Thay đổi</h2>
+<p>Chúng tôi có thể cập nhật chính sách này khi Ứng dụng thay đổi. Ngày ở đầu trang cho biết phiên bản mới nhất. Tiếp tục sử dụng sau khi cập nhật nghĩa là bạn chấp nhận.</p>
+
+<h2>10. Liên hệ</h2>
+<p>FWs · <a href="mailto:17eathday@gmail.com">17eathday@gmail.com</a></p>
+</div>
+<footer><span data-l="en">© FWs. Contact: <a href="mailto:17eathday@gmail.com">17eathday@gmail.com</a></span><span data-l="vi">© FWs. Liên hệ: <a href="mailto:17eathday@gmail.com">17eathday@gmail.com</a></span></footer>
+</div><script>
+(function(){var b=document.body,s=null;try{s=localStorage.getItem('pm_lang')}catch(e){}
+var l=s||((navigator.language||'en').toLowerCase().indexOf('vi')===0?'vi':'en');
+function set(x){b.setAttribute('data-lang',x);document.documentElement.lang=x;
+document.querySelectorAll('.lang button').forEach(function(e){e.setAttribute('aria-pressed',e.dataset.set===x)});
+try{localStorage.setItem('pm_lang',x)}catch(e){}}
+document.querySelectorAll('.lang button').forEach(function(e){e.onclick=function(){set(e.dataset.set)}});set(l)})();
+</script></body></html>
